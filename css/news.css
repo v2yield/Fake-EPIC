@@ -1,0 +1,120 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+#news {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 2800px;
+}
+#news_begin {
+  position: absolute;
+  top: 150px;
+  width: 1450px;
+  height: 2000px;
+}
+#news_pic {
+  float: left;
+  margin-top: 10px;
+  width: 1450px;
+  height: 540px;
+  display: flex;
+}
+#news_pic .pic {
+  float: left;
+  width: 700px;
+  height: 530px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+#news_pic .pic span a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+#news_pic .pic span a:hover {
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+}
+#news_pic .mask {
+  padding: 0;
+  cursor: pointer;
+  left: 20px;
+  position: absolute;
+  width: 700px;
+  height: 450px;
+  background-color: white;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+#news_pic .mask:hover {
+  opacity: 0.3;
+}
+#news_list {
+  margin-top: 20px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  width: 1450px;
+  height: auto;
+  border-radius: 5px;
+}
+#news_list .list {
+  cursor: pointer;
+  border-top: 1px rgb(175, 175, 175) solid;
+  border-bottom: 1px rgb(175, 175, 175) solid;
+  height: 160px;
+  width: 100%;
+  transition: 0.5s ease;
+}
+#news_list .list img {
+  float: left;
+  margin-top: 25px;
+  border-radius: 5px;
+  width: 200px;
+  height: 115px;
+  transition: 0.5s ease;
+}
+#news_list .list img:hover {
+  transform: scale(1.1, 1.1);
+  opacity: 0.8;
+}
+#news_list .list span a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+#news_list .list span a:hover {
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+}
+#news_list .list:hover {
+  background-color: #363636;
+}
+
+#news_begin .chakan {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  float: left;
+  margin-left: 48%;
+  background-color: rgb(42, 42, 42);
+  margin-top: 40px;
+  border-radius: 2px;
+  border: 0.5px solid #fff;
+}
+#news_begin .chakan:hover {
+  background-color: rgb(75, 75, 75);
+  transition: 0.3s ease;
+}

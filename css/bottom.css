@@ -1,0 +1,158 @@
+#div_bottom{
+    position:absolute;
+    width: 100%;
+    height: 510px;
+    padding: 0;
+    top:5500px;
+    background-color: #202020;
+}
+#div_bottom .div_11{
+    width:94%;
+    height: 255px;
+    margin-left: 60px;
+    border-bottom-style: solid;
+    border-bottom-color:#333333 ;
+    border-bottom-width: 2px ;
+    float: left;
+}
+#div_bottom  .div_12{
+    width: 100%;
+    height: 135px;
+    float: left;
+}
+#div_bottom .div_11 .div_13{
+    cursor: pointer;
+    width: 300px;
+    height: 119px;
+    margin-top: 40px;
+    padding: 0;
+    float: left;
+}
+#div_bottom .div_11 .div_13 .facebook{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin:0;
+    padding: 0;
+    background-image: url(../icon/facebook.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+    float: left;
+}
+#div_bottom .div_11 .div_13 .facebook:hover{
+    background-image: url(../icon/facebook1.png);
+}
+#div_bottom .div_11 .div_13 .twitter{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    background-image: url(../icon/twitter.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+    float: left;
+}
+#div_bottom .div_11 .div_13 .twitter:hover{
+    background-image: url(../icon/twitter1.png);
+}
+#div_bottom .div_11 .div_13 .youtube{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    background-image: url(../icon/Youtube-fill.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    transition: 0.3s;
+}
+#div_bottom .div_11 .div_13 .youtube:hover{
+    background-image: url(../icon/Youtube-fill1.png);
+}
+#div_bottom .div_11 .up{
+    cursor: pointer;
+    width:50px;
+    height: 50px;
+    margin-right: 50px;
+    margin-top:40px;
+    padding: 0;
+    background-image: url(../icon/up.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: right;
+}
+#div_bottom .div_11 .up:hover{
+    background-image: url(../icon/up1.png);
+}
+#div_bottom .div_11 ul{
+    width: auto;
+    height: auto;
+    position: absolute;
+    padding: 0;
+    list-style-type: none;
+}
+#div_bottom .div_11 ul li{
+    text-align: left;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin-top:5px ;
+}
+#div_bottom .div_11 ul li a{
+    transition-duration: 0.2s;
+    text-decoration: none;
+    color:#E7E7E7;
+    font-size: 14px;
+}
+#div_bottom .div_11 ul li a:hover{
+    color:#0078F2;
+}
+#div_bottom .div_12 .div_15{
+    width:950px;
+    height: 84px;
+    margin-top: 40px;
+    margin-left: 66px;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100%;
+    line-height: 20px;
+    padding: 0;
+}
+#div_bottom .div_12 .div_16{
+    width: 141px;
+    height: 73px;
+    float: right;
+    padding: 0;
+    background-image: url(../img/logo4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+#div_bottom .div_12 ul{
+    float: left;
+    margin-top: 30px;
+    width: auto;
+    height: auto;
+    padding: 0;
+    list-style-type: none;
+    margin-left: 65px;
+}
+#div_bottom .div_12 ul li{
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+    display: inline;
+}
+#div_bottom .div_12 ul li a{
+    transition-duration: 0.2s;
+    text-decoration: none;
+    color:#E7E7E7;
+    font-size: 15px;
+}
+#div_bottom .div_12 ul li a:hover{
+    color:#0078F2;
+}

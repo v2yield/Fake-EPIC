@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>登录您的 Epic Games 账户 | Epic Games</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/enroll.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div id="box">
+        <img src="./icon/epic1.png">
+        <span style="clear:both;margin-top:30px;margin-left:60px;float:left;color:white; font-size:13px;">选择如何登陆您的
+            EPIC账户</span>
+        <div class="little_box">
+            <div class="list">
+                <span>登录 EPIC GAMES</span>
+            </div>
+            <div class="list">
+                <span>使用 FACEBOOK 登录</span>
+            </div>
+            <div class="list">
+                <span>使用 XBOX LIVE 登录</span>
+            </div>
+            <div class="list">
+                <span>使用 PLAYSTATION NETWORK 登录</span>
+            </div>
+            <div class="list">
+                <span>使用 NINTENDO 账户登录</span>
+            </div>
+            <div class="list">
+                <span>使用 STEAM 登录</span>
+            </div>
+            <div class="list">
+                <span>使用 APPLE 登录</span>
+            </div>
+        </div>
+        <span
+            style="float:left;margin-top:15px;margin-left:130px;color:rgb(193,193,193); letter-spacing:1px;font-size:14px;font-family:'Segoe UI';">还没有
+            Epic Games 账户？</span>
+        <span style="margin-top:15px;float:left;font-size:14px;font-family:'Segoe UI';""><a href="
+            https://www.epicgames.com/id/register?redirect_uri=https%3A%2F%2Fwww.epicgames.com%2Fsite%2F&client_id=5a6fcd3b82e04f8fa0065253835c5221">注册</a></span>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".list").click(function () {
+                location.href = "./login.html";
+            });
+        });
+    </script>
+</body>
+
+</html>

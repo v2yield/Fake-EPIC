@@ -1,0 +1,136 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+#search {
+  background-color: rgb(72, 72, 72);
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  top: 50px;
+}
+#search span {
+  color: white;
+  font-size: 45px;
+  float: left;
+  margin-top: 80px;
+  margin-left: 20%;
+}
+#search span a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+#search span a:hover {
+  text-decoration: underline;
+}
+.search1 {
+  margin-top: 30px;
+  margin-left: 380px;
+  clear: both;
+  float: left;
+  height: 40px;
+  width: 1340px;
+}
+.search1 form {
+  width: 100%;
+  height: 100%;
+}
+.search1 form input {
+  border-radius: 5px;
+}
+.search1 form input:nth-child(2) {
+  width: 1090px;
+  height: 100%;
+  font-size: 16px;
+  text-indent: 40px;
+  border: none;
+  float: left;
+}
+.search1 form input:nth-child(3) {
+  width: 100px;
+  height: 100%;
+  font-size: 16px;
+  letter-spacing: 5px;
+  border: none;
+}
+.search1 form img {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 20px;
+}
+#topic {
+  position: absolute;
+  top: 400px;
+  width: 1180px;
+  height: 2000px;
+}
+#topic .little_topic {
+  float: left;
+  padding: 0;
+  width: 350px;
+  height: 120px;
+  border-top: 1px solid rgb(173, 173, 173);
+  margin-left: 15px;
+}
+#topic .little_topic div {
+  float: left;
+  margin-top: 15px;
+  cursor: pointer;
+  color: rgb(53, 53, 53);
+  font-size: 16x;
+  font-family: Brutal, sans-serif;
+  letter-spacing: 1px;
+}
+#topic .little_topic div:hover {
+  text-decoration: underline;
+}
+#topic .little_topic span {
+  cursor: pointer;
+  color: rgb(0, 116, 227);
+  float: left;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 15px;
+}
+#topic .little_topic span:hover {
+  text-decoration: underline;
+}
+#topic .get1 {
+  float: left;
+  width: 565px;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top:5px;
+  margin-left:12px;
+  cursor: pointer;
+}
+#topic .get1 img {
+  width: 565px;
+  height: 280px;
+  transition:0.7s ease;
+}
+#topic .get1:hover img {
+  transform: scale(1.3);
+}
+#topic .get2 {
+  float: left;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+#topic .get2 img {
+  width: 280px;
+  height: 280px;
+  transition:0.7s ease;
+}
+#topic .get2:hover img {
+  transform: scale(1.3);
+}

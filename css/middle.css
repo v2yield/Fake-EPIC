@@ -1,0 +1,730 @@
+#div2 {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 6000px;
+}
+/*项目总体*/
+#div3 {
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
+  width: 1450px;
+  height: 6000px;
+}
+/*黑色虚拟*/
+#div4 {
+  background-color: #121212;
+  position: fixed;
+  top: 52px;
+  z-index: 10;
+  opacity: 0.9;
+  margin: 0;
+  padding: 0;
+  width: 1450px;
+  height: 100px;
+}
+/*搜索*/
+#div4 ul {
+  z-index: 12;
+  margin-top: 25px;
+  margin-left: -37px;
+  width: auto;
+  height: auto;
+  list-style-type: none;
+  float: left;
+}
+#div4 ul li {
+  width: 40px;
+  height: 30px;
+  margin-left: 13px;
+  padding: 0;
+  float: left;
+  font-size: 16px;
+  line-height: 300%;
+}
+#div4 ul li .a0 {
+  text-align: center;
+  color: #686868;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+#div4 ul li .a0:hover {
+  text-align: center;
+  color: white;
+}
+/*搜索框*/
+#div4 div {
+  width: 230px;
+  height: 40px;
+  padding: 0;
+  margin-top: 30px;
+  margin-right: 0px;
+  float: right;
+  background-color: #202020;
+  border-radius: 5px;
+  border-radius: 5px;
+}
+#div4 div:focus {
+  background-color: #2a2a2a;
+}
+
+#div4 div form input {
+  width: 190px;
+  height: 39px;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 14px;
+  padding: 0;
+  margin-top: 1px;
+  background-color: #2a2a2a;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#div4 div form input:focus {
+  outline: none;
+}
+#div4 div form input::placeholder {
+  color: #a0a0a0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/*大盒子1 :图片展示*/
+#div6 {
+  width: 100%;
+  height: 655px;
+  margin-top: 150px;
+  padding: 0;
+  background-color: #121212;
+  float: left;
+  clear: both;
+}
+#div6 .slideshow-container {
+  cursor: pointer;
+  opacity: 1;
+  padding: 0;
+  margin-left: 15px;
+  border-radius: 20px;
+  float: left;
+  width: 1160px;
+  height: 650px;
+  position: relative;
+}
+#div6 .slideshow-container .pictures {
+  display: none;
+}
+#div6 .slideshow-container .text {
+  font-size: 3px;
+  color: black;
+}
+#div6 .slideshow-container .fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+  animation-timing-function: ease;
+}
+#div6 .slideshow-container .goumai {
+  position: absolute;
+  left: 60px;
+  top: 540px;
+  background-color: white;
+  width: 150px;
+  height: 50px;
+  padding: 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+}
+@keyframes fade {
+  0% {
+    transform: scale(0.5, 0.5);
+    margin-top: -500px;
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#div6 .slideshow-container .tianjia {
+  position: absolute;
+  left: 220px;
+  top: 540px;
+  width: 150px;
+  height: 50px;
+  padding: 0;
+  border-radius: 7px;
+}
+#div6 .slideshow-container .add {
+  position: absolute;
+  left: 220px;
+  top: 540px;
+  background-color: white;
+  width: 150px;
+  height: 50px;
+  padding: 0;
+  border-radius: 7px;
+  opacity: 0;
+  z-index: 10;
+}
+#div6 .slideshow-container .add:hover {
+  opacity: 0.3;
+}
+#div6 .div_2 {
+  flex-direction: column;
+  background-color: #121212;
+  padding: 0;
+  margin-left: 25px;
+  width: 250px;
+  height: 652px;
+  float: left;
+}
+#div6 .div_2 .div_3 {
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  margin-top: 3px;
+  background-color: #121212;
+  border-radius: 20px;
+  width: 250px;
+  height: 127px;
+}
+#div6 .div_2 .div_3:hover {
+  background-color: #363636;
+}
+.active {
+  background: linear-gradient(to right, rgb(6, 122, 216), rgb(5, 176, 228));
+  background-size: 200%;
+  transition: background-position 2s linear;
+}
+.loading {
+  animation: loading 5s linear;
+}
+@keyframes loading {
+  100% {
+    width: 250px;
+  }
+}
+#div6 .div_2 .div_3 .mask {
+  position: absolute;
+  width: 0px;
+  height: 127px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  z-index: 0;
+}
+#div6 .div_2 .div_3 .div_4 {
+  border-radius: 10px;
+  padding: 0;
+  width: 270px;
+  height: 80px;
+  margin-top: 24px;
+  margin-left: 15px;
+}
+#div6 .div_2 .div_3 img {
+  border-radius: 10px;
+  padding: 0;
+  width: 60px;
+  height: 80px;
+  float: left;
+  transition-duration: 0.3s;
+}
+#div6 .div_2 .div_3 img:hover {
+  transform: scale(1.5, 1.5);
+  opacity: 0.7;
+}
+#div6 .div_2 .div_3 .div_4 span {
+  float: left;
+  padding: 0;
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #f2f2f2;
+  line-height: 150%;
+}
+/*万圣节*/
+#div14 {
+  width: 100%;
+  height: 540px;
+  padding: 0;
+  margin-top: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  clear: both;
+}
+#div14 .div_5 {
+  cursor: pointer;
+  width: 860px;
+  height: 510px;
+  padding: 0;
+  margin-left: 20px;
+  margin-top: 40px;
+  background-image: url(../img/wansj.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  float: left;
+}
+#div14 .div_5:hover {
+  filter: brightness(110%);
+}
+#div14 .div_5 div {
+  border-radius: 15px;
+  transition-duration: 0.3s;
+  width: 860px;
+  height: 510px;
+  background-color: white;
+  opacity: 0;
+}
+#div14 .div_5:hover div {
+  width: 860px;
+  height: 510px;
+  background-color: white;
+  opacity: 0.1;
+}
+#div14 .div_6 {
+  width: 500px;
+  height: 510px;
+  padding: 0;
+  margin-top: 30px;
+  margin-left: 10px;
+  background-color: rgb(18, 18, 18);
+  float: left;
+}
+.span1 {
+  color: rgb(245, 245, 245);
+  font-size: 30px;
+  float: left;
+  clear: both;
+  margin-top: 150px;
+  margin-left: 50px;
+  padding: 0;
+}
+.span2 {
+  color: rgb(155, 155, 155);
+  font-size: 20px;
+  float: left;
+  clear: both;
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.liaojie {
+  background-color: rgb(245, 245, 245);
+  float: left;
+  clear: both;
+  padding: 0;
+  margin-top: 120px;
+  margin-left: 50px;
+  width: 100px;
+  height: 50px;
+  border-radius: 8px;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+}
+.liaojie:hover {
+  filter: brightness(110%);
+  transition: 0.2s;
+}
+/*特惠游戏*/
+#div7 {
+  cursor: pointer;
+  width: 100%;
+  height: 460px;
+  margin-top: 50px;
+  padding: 0;
+  float: left;
+  clear: both;
+  transition: 1s ease;
+  overflow: hidden;
+}
+#div7 button {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(32, 32, 32);
+  float: right;
+  border: none;
+  margin: 4px;
+}
+#div7 button:hover {
+  background-color: rgb(43, 43, 43);
+}
+#div7 .div_p {
+  clear: both;
+  float: left;
+  display: flex;
+  margin-top:30px;
+  margin-left:0;
+  width: 2500px;
+  height: 290px;
+  transition: 1s ease;
+}
+#div7 .div_p ul {
+  list-style-type: none;
+  padding: 0;
+}
+#div7 .div_p ul li {
+  float: left;
+  margin-left: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+
+}
+#div7 .div_p ul li img {
+  width: 210px;
+  height: 280px;
+  float: left;
+}
+#div7 .div_p ul li .mask{
+  border-radius: 10px;
+  width: 210px;
+  height: 280px;
+  position: relative;
+  background-color: white;
+  opacity: 0;
+  transition: 0.2s ease;
+}
+#div7 .div_p ul li .mask .add{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background-image: url(../icon/add.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#div7 .div_p ul li .mask:hover{
+  opacity: 0.3;
+}
+/*免费发行*/
+#div8 {
+  width: 100%;
+  height: 600px;
+  padding: 0;
+  background-color: rgb(42, 42, 42);
+  border-radius: 5px;
+  float: left;
+  clear: both;
+  transition: 1s ease;
+}
+#div8 .chakan {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  float: right;
+  margin-right: 50px;
+  background-color: rgb(42, 42, 42);
+  margin-top: 30px;
+  border-radius: 2px;
+  border: 0.5px solid #fff;
+}
+#div8 .chakan:hover {
+  background-color: rgb(75, 75, 75);
+  transition: 0.5s ease;
+}
+#div8 .pic1 {
+  cursor: pointer;
+  clear: both;
+  float: left;
+  width: 670px;
+  height: 370px;
+  margin-left: 45px;
+  margin-top: 30px;
+  padding: 0;
+  background-image: url(../img/gala.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+#div8 .pic2 {
+  cursor: pointer;
+  float: left;
+  width: 670px;
+  height: 370px;
+  padding: 0;
+  margin-left: 20px;
+  margin-top: 30px;
+  background-image: url(../img/ruilida.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+#div8 .pic1:hover {
+  filter: brightness(150%);
+}
+#div8 .pic2:hover {
+  filter: brightness(150%);
+}
+#div8 .mianfei {
+  cursor: pointer;
+  width: 670px;
+  height: 30px;
+  background-color: rgb(0, 120, 242);
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+#div8 .mianfei span {
+  font-size: 15px;
+  color: white;
+}
+#div8 .mianfei:hover span {
+  color: black;
+}
+/*全新发行*/
+#div9 {
+  width: 100%;
+  height: 870px;
+  padding: 0;
+  margin-top: 20px;
+  float: left;
+  clear: both;
+  display: flex;
+}
+#div9 .div_a {
+  width: 480px;
+  height: 860px;
+  float: left;
+}
+#div9 .div_a .div_b {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 800px;
+  margin-left: 10px;
+  margin-top: 10px;
+  float: left;
+}
+#div9 .div_a .div_b .list {
+  width: 450px;
+  height: 160px;
+  float: left;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#div9 .div_a .div_b .list:hover {
+  background-color: #363636;
+}
+#div9 .chakan {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  float: right;
+  margin-right: 20px;
+  background-color: rgb(42, 42, 42);
+  margin-top: 20px;
+  border-radius: 2px;
+  border: 0.5px solid #fff;
+}
+#div9 .chakan:hover {
+  background-color: rgb(75, 75, 75);
+  transition: 0.3s ease;
+}
+/*发行商特卖*/
+#div10 {
+  width: 1450px;
+  height: 600px;
+  padding: 0;
+  margin-top: 40px;
+  float: left;
+  clear: both;
+}
+#div10 .pic1 {
+  cursor: pointer;
+  padding: 0;
+  width: 700px;
+  height: 400px;
+  background-color: blue;
+  float: left;
+  margin-left: 10px;
+  border-radius: 20px;
+  background-image: url(../img/zhansheng.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#div10 .pic2 {
+  cursor: pointer;
+  padding: 0;
+  width: 700px;
+  height: 400px;
+  margin-left: 30px;
+  background-color: green;
+  background-image: url(../img/sifu.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  border-radius: 20px;
+}
+#div10 .add {
+  cursor: pointer;
+  width: 700px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 20px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.2s ease;
+}
+#div10 .add:hover {
+  opacity: 0.3;
+}
+/*最新更新*/
+#div11 {
+  cursor: pointer;
+  width: 100%;
+  height: 540px;
+  padding: 0;
+  margin-top: 40px;
+  float: left;
+  clear: both;
+}
+#div11 ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: -20px;
+}
+#div11 ul li {
+  float: left;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+#div11 .div_z {
+  position: absolute;
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-left: -20px;
+}
+#div11 .div_z .add {
+  cursor: pointer;
+  width: 330px;
+  height: 460px;
+  float: left;
+  margin-left: 25px;
+  margin-top: 50px;
+  background-color: white;
+  opacity: 0;
+}
+#div11 .div_z .add:hover {
+  opacity: 0.3;
+}
+/*最新更新plus*/
+#div12 {
+  cursor: pointer;
+  width: 100%;
+  height: 560px;
+  padding: 0;
+  margin-top: 40px;
+  background-color: red;
+  background-image: url(../img/zuixing1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  clear: both;
+}
+/*上架*/
+#div13 {
+  cursor: pointer;
+  width: 100%;
+  height: 550px;
+  padding: 0;
+  margin-top: 40px;
+  background-color: red;
+  background-image: url(../img/shangjia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  clear: both;
+  overflow: hidden;
+}
+/*最受欢迎*/
+#div_14 {
+  cursor: pointer;
+  width: 100%;
+  height: 530px;
+  padding: 0;
+  margin-top: 20px;
+  background-color: red;
+  background-image: url(../img/huanying.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  clear: both;
+}
+/*浏览*/
+#div15 {
+  width: 100%;
+  height: 550px;
+  padding: 0;
+  margin-top: 80px;
+  background-color: #121212;
+  float: left;
+  clear: both;
+}
+#div15 .div_7 {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  width: 860px;
+  height: 486px;
+  float: left;
+  border-radius: 20px;
+  background-image: linear-gradient(to bottom right, #000103, #0076ee);
+}
+/*悬浮罩白色*/
+#div15 .div_7 .div_8 {
+  position: absolute;
+  z-index: 3;
+  transition-duration: 0.2s;
+  padding: 0;
+  margin: 0;
+  width: 860px;
+  height: 486px;
+  float: left;
+  border-radius: 20px;
+  background-color: white;
+  opacity: 0;
+}
+#div15 .div_7:hover .div_8 {
+  padding: 0;
+  margin: 0;
+  width: 860px;
+  height: 486px;
+  float: left;
+  border-radius: 20px;
+  background-color: white;
+  opacity: 0.2;
+}
+#div15 .div_9 {
+  width: 855px;
+  height: 560px;
+  margin: 0;
+  margin-top: -160px;
+  padding: 0;
+  position: absolute;
+  z-index: 2;
+  background-image: url(../img/chongdie.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#div15 .div_10 {
+  margin-left: 45px;
+  padding: 0;
+  width: 519px;
+  height: 465px;
+  float: left;
+}

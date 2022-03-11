@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color:white;
+}
+.main{
+    position:absolute;
+    top:50px;
+    width: 1200px;
+    height: auto;
+}
+.title{
+    color:rgb(51,51,51);
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+.question{
+    margin-top:20px;
+    color:rgb(76,76,78);
+    font-size:15px;
+    font-weight: 900;
+}
+.answer{
+    font-size: 15px;
+    color: rgb(51,51,51);
+}
+table{
+    margin-top:20px;
+}
